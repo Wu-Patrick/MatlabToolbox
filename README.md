@@ -25,7 +25,7 @@ Access [the source code](https://github.com/Wu-Patrick/MatlabToolbox).
 
 **read_kml** Reads in (x,y,z) from a GoogleEarth kml file.
 
-...
+---
 
 **listdir** Lists the files in a folder.
 
@@ -35,7 +35,7 @@ Access [the source code](https://github.com/Wu-Patrick/MatlabToolbox).
 
 **getCommand** Constructs a command from multiple parameters.
 
-...
+---
 
 **goldstein_filt** Goldstein adaptive phase filtering
 
@@ -51,7 +51,7 @@ Access [the source code](https://github.com/Wu-Patrick/MatlabToolbox).
 
 **randR** Uniformly distributed pseudorandom numbers within a certain range.
 
-...
+---
 
 **linkaxesAll** Synchronize limits of all drawn 2-D axes.
 
