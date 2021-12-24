@@ -9,14 +9,14 @@
 % @create on:   13-Mar-2020 21:35:45
 % @version:     Matlab 9.4.0.813654 (R2018a)
 % =========================================================================
-%listdir Lists the files in a folder.
+%listdir Lists the files or subfolders in a folder.
 % 
 % fileNames = listdir(folder, filter, idx)
 % 
 % input:
 %     folder: must be specified as a character vector or string scalar.
-%     filter: Regular expression.
-%             Example: '/*.png'
+%     filter: 'folder' to get all subfolders, regular expression (e.g.,
+%             '*.png') to get files.
 %     idx: return file name of idx
 %          if idx<=0, return the full paths of all files.
 % output:
@@ -38,7 +38,8 @@ if strcmp(filter,'folder')
     files = d(isub);
     files = files(3:end);
 else
-    files = dir([folder filter]);
+    files = dir(fullfile(folder, filter));
+%     files = dir([folder filter]);
 end
 
 if nargin == 3
